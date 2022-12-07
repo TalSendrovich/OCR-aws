@@ -59,8 +59,7 @@ public class CreateEC2 implements Runnable {
 
         CreateTagsRequest tagRequest = CreateTagsRequest.builder()
                 .resources(instanceID)
-                .tags(tag)
-             /home/tal/Desktop/DSP   .build();
+                .tags(tag).build();
 
         try {
             ec2.createTags(tagRequest);
